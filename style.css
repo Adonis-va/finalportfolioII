@@ -164,7 +164,7 @@ h5 {
   align-items: center;
   gap: 20px;
 }
-.websiteImage {
+.website img {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .websiteImage:hover {
