@@ -205,3 +205,7 @@ h5 {
 h3 {
   font-family: "Marmelad", sans-serif;
 }
+
+.center {
+  text-align: center;
+}
