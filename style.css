@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+*{box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d1d0ba;
+}
+ header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 50px;
+  background-color: #313131;
+  gap: 20px;
+ }
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+  margin: 0;
+  font-family: "Marmelad", sans-serif;
+  color: #fff;
+}
+h2 {
+  color: #651313;
+}
+h3 {
+  color: #651313;
+}
+nav {
+  font-family: "Marmelad", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+ nav li {
+  list-style: none;
+ }
+ nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+ }
+ nav ul li a {
+  text-decoration: none;
+  color: #fff;
+ }
+ nav ul li a:hover {
+  color: #ffd446;
+ }
+
+ .details {
+  text-align: center;
+  margin: 5% 25%;
+ }
+ footer {
+  text-align: center;
+  background-color: #313131;
+  padding: 80px;
+  margin-top: 200px;
+  color: #fff;
+ }
+ .card {
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  border: 2px solid #fff;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8);
+ }
+.cardsContainer {
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: calc(25%);
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  box-shadow: 0 0 1px #ccc;
+}
+img {
+  width: 350px;
+  border-radius: 10px;
+}
+.card:hover {
+  cursor: pointer;
+}
+.myProjectHeader {
+  text-align: center;
+}
+h4 {
+  font-size: 2em;
+  color: #4a1111;
+  font-family: "Marmelad", sans-serif;
+}
+.myProjectParagraph {
+  margin: 0 25%;
+}
+.lastSection {
+  display: flex;
+  gap: 30px;
+  place-content: center;
+  font-weight: 600;
+}
+.proDocParagraph {
+  margin: 0 25%;
+}
+.cardsContainer .card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.cardsContainer .card.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+.websitesTittle {
+  color: #4a1111;
+  text-align: center;
+  font-size: 2em;
+}
+.exploreMoreTittle {
+  color: #4a1111;
+  text-align: center;
+  font-size: 2em;
+}
+.exploreMore {
+  text-align: center;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.explore {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.1em;
+  font-family: "Marmelad", sans-serif;
+}
+.webaccparagraph {
+   margin: 0 20%;
+}
+.webaccsection {
+  text-align: center;
+}
+.websitelist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.interstingWebsites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.websiteImage {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.websiteImage:hover {
+  cursor: pointer;
+}
+
+.collectionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto; /* this centers the grid horizontally */
+}
+
+
+.collectionCard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 10px;
+
+}
+
+.collectionCard h5 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+.collectionCard a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+h3 {
+  font-family: "Marmelad", sans-serif;
+}
