@@ -62,14 +62,13 @@ nav {
  .card {
   width: 300px;
   height: 300px;
-  background-color: #ccc;
+  background-color: #f4f4f4;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  border: 2px solid #fff;
   align-items: center;
   justify-content: center;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 .cardsContainer {
   margin: 100px auto;
@@ -173,18 +172,19 @@ h5 {
 
 .collectionContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   max-width: 100%;
   margin: 0 auto; /* this centers the grid horizontally */
+  font-size: 1.2em;
 }
 
 
 .collectionCard {
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 40px;
+  padding: 80px;
   text-align: center;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -194,7 +194,7 @@ h5 {
 
 .collectionCard h5 {
   margin: 10px 0 5px;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .collectionCard a {
@@ -208,4 +208,37 @@ h3 {
 
 .center {
   text-align: center;
+}
+
+.websiteBox {
+  width: 250px;
+  padding: 60px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.viewButton {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.viewButton:hover {
+  background-color: #0056b3;
+}
+#websiteContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

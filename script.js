@@ -30,3 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+[
+  { "title": "PayPal", "url": "https://www.paypal.com/us/home?tab=personal" },
+  { "title": "MapCrunch", "url": "https://www.mapcrunch.com/" },
+  { "title": "Breakfast", "url": "https://wearebreakfast.com/" },
+  { "title": "Little Alchemy", "url": "https://littlealchemy2.com/" },
+  { "title": "NCase", "url": "https://ncase.me/trust/" },
+  { "title": "NicePage", "url": "https://nicepage.com/" },
+  { "title": "Music Theory", "url": "https://www.musictheory.net/" },
+  { "title": "Da Font", "url": "https://www.dafont.com/theme.php?cat=114" },
+  { "title": "29a.ch", "url": "https://29a.ch/" }
+]
+

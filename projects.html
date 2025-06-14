@@ -78,67 +78,10 @@
           </a>
         </div>
     </div>
+
     <section class="interstingWebsites">
       <h3 class="websitesTittle">Interesting Websites</h3>
-      <div class="websitelist">
-
-          <div class="website w1">
-            <h5>Paypal</h5>
-            <img src="/Images/paypal.png" class="websiteImage" alt="">
-            <div class="center"><a href="https://www.paypal.com/us/home?tab=personal">View Project</a></div>
-          </div>
-
-          <div class="website w2">
-            <h5>MapCrunch</h5>
-            <img src="/Images/mapcrunch.png" alt="">
-            <a href="https://www.mapcrunch.com/">
-            </a>
-          </div>
-
-          <div class="website w3">
-            <h5>Breakfast</h5>
-            <img src="/Images/breakfast.png" alt="">
-            <a href="https://wearebreakfast.com/">
-            </a>
-          </div>
-
-          <div class="website w4">
-            <h5>Little Alchemy</h5>
-            <img src="/Images/littlealchemy.png" alt="">
-            <a href="https://littlealchemy2.com/">
-            </a>
-          </div>
-
-          <div class="website w5">
-            <h5>NCase</h5>
-            <img src="/Images/ncase.png" alt="">
-            <a href="https://ncase.me/trust/"></a>
-          </div>
-
-          <div class="website w6">
-            <h5>NicePage</h5>
-            <img src="/Images/nicepage.png" alt="">
-            <a href="https://nicepage.com/"></a>
-          </div>
-
-          <div class="website w7">
-            <h5>Music Theory</h5>
-            <img src="/Images/musictheory.png" alt="">
-            <a href="https://www.musictheory.net/"></a>
-          </div>
-          
-          <div class="website w8">
-            <h5>Da Font</h5>
-            <img src="/Images/dafont.png" alt="">
-            <a href="https://www.dafont.com/theme.php?cat=114"></a>
-          </div>
-
-          <div class="website w9">
-            <h5>29a.ch</h5>
-            <img src="/Images/29a.ch.png" class="websiteImage" alt="">
-            <a href="https://29a.ch/"></a>
-          </div>
-      </div>
+      <div id="websiteContainer"></div>
     </section>
     
    <section class="exploreMore">
@@ -181,6 +124,39 @@
     }
   ]
   </script>
+
+  <script>
+    const websites = [
+      { title: "PayPal", url: "https://www.paypal.com/us/home?tab=personal" },
+      { title: "MapCrunch", url: "https://www.mapcrunch.com/" },
+      { title: "Breakfast", url: "https://wearebreakfast.com/" },
+      { title: "Little Alchemy", url: "https://littlealchemy2.com/" },
+      { title: "NCase", url: "https://ncase.me/trust/" },
+      { title: "NicePage", url: "https://nicepage.com/" },
+      { title: "Music Theory", url: "https://www.musictheory.net/" },
+      { title: "Da Font", url: "https://www.dafont.com/theme.php?cat=114" },
+      { title: "29a.ch", url: "https://29a.ch/" }
+    ];
+
+    const container = document.getElementById("websiteContainer");
+
+    websites.forEach(site => {
+      const box = document.createElement("div");
+      box.classList.add("websiteBox");
+
+      const title = document.createElement("h3");
+      title.textContent = site.title;
+      box.appendChild(title);
+
+      const button = document.createElement("button");
+      button.textContent = "View";
+      button.classList.add("viewButton");
+      button.onclick = () => window.open(site.url, "_blank");
+      box.appendChild(button);
+
+      container.appendChild(box);
+    });
+</script>
 
 </body>
 </html>
