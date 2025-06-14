@@ -68,7 +68,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
  }
 .cardsContainer {
   margin: 100px auto;
@@ -163,9 +163,7 @@ h5 {
   align-items: center;
   gap: 20px;
 }
-.website img {
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+
 .websiteImage:hover {
   cursor: pointer;
 }
@@ -186,8 +184,8 @@ h5 {
   border-radius: 10px;
   padding: 80px;
   text-align: center;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #f4f4f4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin: 10px;
 
 }
